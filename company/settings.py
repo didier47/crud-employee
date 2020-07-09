@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-from sys import platform
 
 import environ
 
@@ -29,21 +28,19 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = env('SECRET_KEY')
 
 BASE_URL = 'company/api/'
+
+# If needed
 BASE_PATH = 'v1/'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-if platform == "win32":
-    DEBUG = True
-    SWAGGER_URL = None
-    CUSTOM_SWAGGER = {
-        'BASE_PATH': f'/{BASE_URL}'
-    }
-else:
-    DEBUG = False
-    SWAGGER_URL = 'https://test-mpos.wposs.com/'
-    CUSTOM_SWAGGER = {
-        'BASE_PATH': f'/{BASE_PATH + BASE_URL}'
-    }
+DEBUG = True
+
+# Custom properties for swagger
+SWAGGER_URL = None
+
+CUSTOM_SWAGGER = {
+    'BASE_PATH': f'/{BASE_URL}'
+}
 
 ALLOWED_HOSTS = ['*']
 
