@@ -101,8 +101,8 @@ REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': [
         'django_filters.rest_framework.DjangoFilterBackend',
     ],
-    'EXCEPTION_HANDLER': 'polaris.common.exception_handler.custom_exception_handler',
-    'DEFAULT_PAGINATION_CLASS': 'polaris.common.paginators.CustomPagination',
+    'EXCEPTION_HANDLER': 'django_cassandra.common.exception_handler.custom_exception_handler',
+    'DEFAULT_PAGINATION_CLASS': 'django_cassandra.common.paginators.CustomPagination',
     'PAGE_SIZE': 100
 }
 

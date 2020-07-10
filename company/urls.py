@@ -1,7 +1,7 @@
 from django.urls import path, include
 from drf_yasg import openapi
 from drf_yasg.views import get_schema_view
-from polaris.common.utilities import CustomOpenAPISchemaGenerator
+from django_cassandra.common.utilities import CustomOpenAPISchemaGenerator
 from rest_framework.routers import SimpleRouter
 
 from company.settings import SWAGGER_URL, BASE_URL

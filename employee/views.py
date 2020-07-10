@@ -1,7 +1,7 @@
 from django_filters import filters
 from django_filters.rest_framework import DjangoFilterBackend
-from polaris.common.filters import FilterSet, CustomDateTimeFilter
-from polaris.common.views import ModelViewSet
+from django_cassandra.common.filters import FilterSet, CustomDateTimeFilter
+from django_cassandra.common.views import ModelViewSet
 from rest_framework.filters import OrderingFilter
 
 from employee.models import EmployeeModel

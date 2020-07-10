@@ -1,8 +1,8 @@
 import uuid
 
 from cassandra.cqlengine import columns
-from polaris.common.models import AuditoryModel
-from polaris.common.utilities import Enums
+from django_cassandra.common.models import AuditoryModel
+from django_cassandra.common.utilities import Enums
 
 
 class EmployeeModel(AuditoryModel):

@@ -1,7 +1,7 @@
 import uuid
 
-from polaris.common.serializers import AuditorySerializer
-from polaris.common.utilities import Enums, Constants
+from django_cassandra.common.serializers import AuditorySerializer
+from django_cassandra.common.utilities import Enums, Constants
 from rest_framework import serializers
 
 from employee.models import EmployeeModel

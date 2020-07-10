@@ -1,6 +1,6 @@
-
+django-cassandra-common
 cassandra-driver==3.23.0
-Django==3.0.6
+Django==3.0.7
 django-cassandra-engine==1.6.1
 djangorestframework==3.11.0
 django-filter==2.3.0
@@ -8,4 +8,3 @@ drf-yasg==1.17.1
 requests==2.23.0
 django-cors-headers==3.4.0
 django-environ==0.4.5
-polaris-common
