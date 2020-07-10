@@ -35,7 +35,7 @@ after that, install the packages in requirements.txt to make sure you have every
 pip install -r requirements.txt
 ```
 
-finally, set up aassandra, you can do this following the instructions on https://cassandra.apache.org/, then, synchronize db with
+finally, set up cassandra, you can do this following the instructions on https://cassandra.apache.org/, then, synchronize db with
 
 ```
 py manage.py syncdb
