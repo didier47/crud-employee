@@ -1,6 +1,6 @@
 django-cassandra-common
 cassandra-driver==3.23.0
-Django==3.0.7
+Django==3.0.12
 django-cassandra-engine==1.6.1
 djangorestframework==3.11.0
 django-filter==2.3.0
